@@ -4,6 +4,23 @@
 #Data inputted into FIBERS can only contain columns for (1) the features eligible for binning, (2) the variable indicating event occurrence, and (3) the variable
 #indicating duration to event. Thus, preprocessing may be required prior to running FIBERS
 
+#Importing necessary packages
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import random
+from random import choice
+from random import seed
+from random import randrange
+import collections
+import statistics
+import math
+import numpy as numpy
+import pandas as pd
+from lifelines import KaplanMeierFitter
+from lifelines.statistics import logrank_test
+from lifelines import CoxPHFitter
+
 #Loading in a dataset
 data = pd.read_csv('Your Dataset Here")e
 
