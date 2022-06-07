@@ -9,7 +9,7 @@ FIBERS utilizes an evolutionary algorithm approach to optimizing bins of feature
    - Genetic operations (elitism, parent selection, crossover, and mutation) for new bin discovery and generation of the next generation of candidate bins
 3) Final bin evaluation and summary of risk stratification provided by top bins
 
-Please see the Methods.py file for full code of the FIBERS algorithm and its subfunctions. The Example.py file gives an example of how FIBERS would be run. In addition, the CoxModel_Implementation.py file gives an example of running a covariate-adjusted analysis of a top bin constructed by FIBERS in order to calculate a hazard ratio. 
+Please see the FIBERS_Algorithm_Code.py file for full code of the FIBERS algorithm and its subfunctions. The Example.py file gives an example of how FIBERS would be run. In addition, the CoxModel_Implementation.py file gives an example of running a covariate-adjusted analysis of a top bin constructed by FIBERS in order to calculate a hazard ratio. 
 
 <ins>Parameters for FIBERS:</ins>
 1) given_starting_point: whether or not expert knowledge is being inputted (True or False)
