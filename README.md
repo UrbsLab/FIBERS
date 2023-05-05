@@ -3,11 +3,13 @@
 
 FIBERS utilizes an evolutionary algorithm approach to optimizing bins of features based on their stratification of event risk through the following steps:
 
-1) Random bin initializaiton or expert knowledge input; the bin value at an instance is the sum of the instance's values for the features included in the bin
+1) Random bin initialization or expert knowledge input; the bin value at an instance is the sum of the instance's values for the features included in the bin
 2) Repeated evolutionary cycles consisting of:
    - Candidate bin evaluation with logrank test to evaluate for significant difference in survival curves of the low risk group (instances for which bin value = 0) and high risk group (instances for which bin value > 0).
    - Genetic operations (elitism, parent selection, crossover, and mutation) for new bin discovery and generation of the next generation of candidate bins
 3) Final bin evaluation and summary of risk stratification provided by top bins
+
+![alttext](https://github.com/UrbsLab/FIBERS/blob/main/Pictures/Figure 1.png?raw=true)
 
 ## Read More About FIBERS
 The first publication detailing FIBERS (release 0.1.0) and applying it to amino acid missmatch data in predicting graft failure in kidney transplantion can be found [here](https://www.sciencedirect.com/science/article/abs/pii/S1532046423000953?casa_token=txUcZIBcNgMAAAAA:RMGojJf4fp6fMwu38OZRNwtA-1cv8p7eSl0AW9i2gHxvfjbVij-W_Z6qkdQC6YDIj1aU5d31pA).
